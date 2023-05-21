@@ -1,6 +1,7 @@
 import q0
-value
-total_value
+
+value = 0
+total_value = ()
 def print_story(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hola, {name}, bienvenido a nuestro juego interactivo: Automatas en tu vida diaria'
@@ -12,7 +13,7 @@ def print_story(name):
     total_value append value
     if value == 0:
         q3():
-    else:
+    if value ==1:
         q2():
 
     gamecase(value)
