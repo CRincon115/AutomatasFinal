@@ -14,3 +14,5 @@ automata1 = DFA(Q, sigma, delta, initialState, F)
 print(automata1.isValid())
 
 automata1.view("Juego Completo")
+
+automata1.accept("0000011")
