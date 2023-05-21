@@ -1,2 +1,3 @@
 def q0():
-    print("juan tiene sed. qlo si no. o si")
+    print("Estas en q0")
+    input("Press enter to continue")

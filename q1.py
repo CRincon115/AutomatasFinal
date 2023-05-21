@@ -1,6 +1,5 @@
 #semaforo
 def q1():
-    print("juan tiene sed. qlo si no. o si elige 1 si quieres cheve o si no")
-    value = input("ingresa tu numero")
-
-    return value
+    global value 
+    value = int(input("Estas en q1, 1 para q2 o 0 para q3"))
+    # return value
