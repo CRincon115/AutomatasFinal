@@ -1,0 +1,2 @@
+#finalizacion
+#irse a gamecase

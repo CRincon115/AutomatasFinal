@@ -7,3 +7,10 @@ def print_hi(name):
 if __name__ == '__main__':
     name = input(" inserta tu nombre")
     print_story(name)
+
+
+##TO DOOOOOO
+#qo, q2, q3
+#unir toda lo logica
+#checar suma de strings en gameCase
+#checar detalles

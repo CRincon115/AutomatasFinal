@@ -1,6 +1,7 @@
 from automathon import DFA
 from PIL import Image
 
+#traes la suma final del path del juego
 
 def gameCaseSimple():
     Q = {'inicio', 'semaforo', 'atm', 'expendidora', 'fin'}
