@@ -1,3 +1,3 @@
 def q0():
-    print("Estas en q0")
-    input("Press enter to continue")
+    print("Aquí es donde comienza la aventura, se le conoce como el estado inicial al primer estado de un autómata.")
+    input("Presiona enter para continuar.")
