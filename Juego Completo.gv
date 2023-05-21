@@ -1,0 +1,18 @@
+digraph "Juego Completo" {
+	graph [rankdir=LR]
+	"" [label="" shape=plaintext]
+	q4 [label=q4 shape=doublecircle]
+	q3 [label=q3 shape=circle]
+	q0 [label=q0 shape=circle]
+	semaforo [label=semaforo shape=circle]
+	q2 [label=q2 shape=circle]
+	"" -> q0 [label=""]
+	q0 -> semaforo [label=0]
+	q0 -> semaforo [label=1]
+	semaforo -> q3 [label=0]
+	semaforo -> q2 [label=1]
+	q2 -> q3 [label=0]
+	q2 -> q3 [label=1]
+	q3 -> semaforo [label=0]
+	q3 -> q4 [label=1]
+}
