@@ -1,0 +1,18 @@
+digraph "Juego Completo simple" {
+	graph [rankdir=LR]
+	"" [label="" shape=plaintext]
+	juego [label=juego shape=doublecircle]
+	ATM [label=ATM shape=circle]
+	inicio [label=inicio shape=circle]
+	"máquina expendedora" [label="máquina expendedora" shape=circle]
+	"semáforo" [label="semáforo" shape=circle]
+	"" -> inicio [label=""]
+	inicio -> "semáforo" [label=0]
+	inicio -> "semáforo" [label=1]
+	"semáforo" -> "máquina expendedora" [label=0]
+	"semáforo" -> ATM [label=1]
+	ATM -> "máquina expendedora" [label=0]
+	ATM -> "máquina expendedora" [label=1]
+	"máquina expendedora" -> "semáforo" [label=0]
+	"máquina expendedora" -> juego [label=1]
+}

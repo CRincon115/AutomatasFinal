@@ -38,7 +38,7 @@ def q2():
 
     def gamelogic():
         print("Ya haz sacado dinero, ahora podemos ir comprar una bebida!")
-        token = input("Ir a comprar bedida? Si/Si!")
+        token = input("Ir a comprar bedida? Si/Si! ")
         text = token.casefold()
         if text == "si":
             return 1

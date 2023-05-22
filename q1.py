@@ -38,7 +38,7 @@ def q1():
 
     def gamelogic():
         print("Juan Tiene sed, y decide pasar a la Máquina expendedora para Comprar una bebida,¿Revisas tu cartera?")
-        token = input("Si/No")
+        token = input("Si/No ")
         text = token.casefold()
         if text == "si":
             return 1
@@ -81,7 +81,7 @@ def q1alternativo():
     print("No hay necesidad de regresar, mejor ve al partido...")
     def gamelogic():
         print("Ir al partido?")
-        token = input("Si/No")
+        token = input("Si/No ")
         text = token.casefold()
         if text == "si":
             return 1

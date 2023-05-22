@@ -26,7 +26,7 @@ def q3():
     def gamelogic():
         print("Ahora que compraste la bebida, estás listo para el partido!")
         print("Ir al partido?")
-        token = input("Si/No")
+        token = input("Si/No ")
         text = token.casefold()
         if text == "si":
             return 1
@@ -83,7 +83,7 @@ def q3alternativo():
     print("No tienes suficiente dinero para comprar una soda, tal vez sacando dinero de un ATM...")
     def gamelogic():
         print("Puedes regresar o irte directamente al partido.")
-        token = input("Regresar/Irme")
+        token = input("Regresar/Irme ")
         text = token.casefold()
         if text == "regresar":
             return 1

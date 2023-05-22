@@ -1,9 +1,10 @@
 from automathon import DFA
 from PIL import Image
+import intro
 
 #traes la suma final del path del juego
 
-def gameCaseFinal(total_value):
+def gameCaseFinal():
     def gameCaseSimple():
         Q = {'inicio', 'semáforo', 'ATM', 'máquina expendedora', 'juego'}
         sigma = {'0', '1'}
@@ -38,8 +39,8 @@ def gameCaseFinal(total_value):
         image.show()
         input("presiona para continuar")
 
-        print("la cadena de aceptacion que generaste es: ", total_value)
-        print(automata1.accept(total_value))
+        print("la cadena de aceptación que generaste: ", intro.total_value, "es válida")
+        # print("Tu cadena es válida?", automata1.accept(str(intro.total_value)))
 
 
     print("Gracias por probar nuestro juego, toda esta aventura envuelve a un autómata también, de\n"
