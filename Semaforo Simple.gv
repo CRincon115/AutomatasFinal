@@ -1,8 +1,8 @@
 digraph "Semaforo Simple" {
 	graph [rankdir=LR]
 	"" [label="" shape=plaintext]
-	amarillo [label=amarillo shape=circle]
 	rojo [label=rojo shape=circle]
+	amarillo [label=amarillo shape=circle]
 	verde [label=verde shape=circle]
 	"" -> rojo [label=""]
 	rojo -> verde [label=cambio]
