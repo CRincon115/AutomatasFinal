@@ -88,4 +88,4 @@ def q1alternativo():
         elif text == "no":
             q1alternativo()
     global value 
-    value =  gamelogic() 
+    value = gamelogic()
