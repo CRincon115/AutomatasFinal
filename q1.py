@@ -1,4 +1,4 @@
-#semaforo
+#Semáforo
 from automathon import DFA
 from PIL import Image
 
@@ -15,10 +15,10 @@ def q1():
         F = {}
 
         automataSemaforo = DFA(Q, sigma, delta, initialState, F)
-        automataSemaforo.view("Semaforo")
-        image = Image.open('Semaforo.gv.png')
-        input("presiona para continuar")
+        automataSemaforo.view("Semáforo")
+        image = Image.open('Semáforo.gv.png')
         image.show()
+        input("presiona para continuar")
 
     def q1simple():
         Q = {'rojo', 'verde', 'amarillo'}
@@ -62,7 +62,7 @@ def q1():
         "F = {}\n")
 
     q1Origin()
-    input("Presiona para continuar")
+    
     print("A continuación, se muestra lo anterior de forma explícita reflejando el caso de la vida real."
         "Q = {'rojo', 'verde', 'amarillo'}\n"
         "sigma = {'cambio'}\n"
@@ -72,11 +72,18 @@ def q1():
     q1simple()
     input("Presiona para continuar")
 
-    tSigma = gamelogic()
-
-
-    print(tSigma)
-
     global value 
-    value = int(input("Estas en el estado del semáforo, selecciona '1' para viajar al ATM o '0' para viajar a la máquina expendedora."))
+    value =  gamelogic() 
 
+def q1alternativo():
+    print("No hay necesidad de regresar, mejor ve al partido...")
+    def gamelogic():
+        print("Ir al partido?")
+        token = input("Si/No")
+        text = token.casefold()
+        if text == "si":
+            return 1
+        elif text == "no":
+            q1alternativo()
+    global value 
+    value =  gamelogic() 

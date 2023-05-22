@@ -1,0 +1,14 @@
+digraph "ATM Simple" {
+	graph [rankdir=LR]
+	"" [label="" shape=plaintext]
+	Salir [label=Salir shape=doublecircle]
+	Cantidad [label=Cantidad shape=circle]
+	Retirar [label=Retirar shape=circle]
+	"" -> Inicio [label=""]
+	Inicio -> Retirar [label=0]
+	Inicio -> Retirar [label=1]
+	Retirar -> Cantidad [label=1]
+	Retirar -> Salir [label=0]
+	Cantidad -> Retirar [label=1]
+	Cantidad -> Salir [label=0]
+}

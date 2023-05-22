@@ -1,4 +1,4 @@
-digraph Semaforo {
+digraph "Semáforo" {
 	graph [rankdir=LR]
 	"" [label="" shape=plaintext]
 	q2 [label=q2 shape=circle]

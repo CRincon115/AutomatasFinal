@@ -10,15 +10,38 @@ def print_story(name):
     input("Press enter to continue")
 
     q0.q0()
-
-    q1.q1()  # Asignar el valor devuelto por q1() a la variable value
     
-    if q1.value == 0:
-        q3.q3()
-    elif q1.value == 1:
-        q2.q2()
-    else:
-        print("Por favor, escoge una de las opciones correctas")
+    def vuelta():
+        q1.q1() # Asignar el valor devuelto por q1() a la variable value 
+        if q1.value == 0:
+            q3.q3alternativo()
+            if q3.value == 0:
+                q4.q4()
+            elif q3.value == 1:
+                vuelta()
+            else:
+                print("Ups, error")
+
+    
+        elif q1.value == 1:
+            q2.q2()
+            q3.q3()
+            if q3.value == 1:
+                q4.q4()
+            elif q3.value == 0:
+                q1.q1alternativo()
+                if q1.value == 1:
+                    q4.q4()
+                else:
+                    q4.q4()
+            else:
+                print("Ups, error")
+        else:
+            print("Ups, error")
+
+
+    vuelta()
+ 
 
 
     # gamecase(value)
