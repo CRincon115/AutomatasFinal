@@ -1,8 +1,7 @@
 import gameCase
 
 def q4():
-    print("Estas en q4, siuuuuu")
-    gameCase.gameCaseFinal()
+    print("Haz llegado al juego!, Mucho éxito :)")
 
 #finalizacion
 #irse a gamecase

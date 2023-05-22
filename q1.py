@@ -33,8 +33,8 @@ def q1():
         automataSemaforoSimple = DFA(Q, sigma, delta, initialState, F)
         automataSemaforoSimple.view("Semaforo Simple")
         image = Image.open('Semaforo Simple.gv.png')
-        input("presiona para continuar")
         image.show()
+        input("presiona para continuar")
 
     def gamelogic():
         print("Juan Tiene sed, y decide pasar a la Máquina expendedora para Comprar una bebida,¿Revisas tu cartera?")
@@ -62,15 +62,17 @@ def q1():
         "F = {}\n")
 
     q1Origin()
-    
+
     print("A continuación, se muestra lo anterior de forma explícita reflejando el caso de la vida real."
         "Q = {'rojo', 'verde', 'amarillo'}\n"
         "sigma = {'cambio'}\n"
         "delta = { 'rojo' : {'cambio': 'verde'}, 'verde' : {'cambio': 'amarillo'}, 'amarillo' : {'cambio': 'rojo'}}\n"
         "initialState = 'rojo'\n"
         "F = {sin estado final}\n")
+    
     q1simple()
-    input("Presiona para continuar")
+    
+    
 
     global value 
     value =  gamelogic() 
